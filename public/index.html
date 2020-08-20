@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IPL visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>
+        IPL visualization
+    </title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">IPL Dataset Visualization</h1>
+    <hr>
+    <div id="matches-played-per-year" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <hr>
+    <div id="matches-won-by-each-team" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <hr>
+    <div id="extra-runs-conceded-by-each-team" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <hr>
+    <div id="top-ten-economical-bowlers" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <hr>
+
+    <div id="story_on_given_data">
+        <h3 style="text-align: center;">About Matches.csv dataset</h3>
+        <pre style="text-align: center;">
+            It includes the following data 
+            team id,
+            season,
+            city,
+            date,
+            team1,
+            team2,
+            toss_winner,
+            toss_decision,
+            result,
+            dl_applied,
+            winner,
+            win_by_runs,
+            win_by_wickets,
+            player_of_match,
+            venue,
+            umpire1,
+            umpire2,
+            umpire3</pre>
+            <hr>
+        <h3 style="text-align: center;">About Deliveries.csv dataset</h3>
+        <pre style="text-align: center;">
+            It includes the following data
+            match_id,
+            inning,
+            batting_team,
+            bowling_team,
+            over,
+            ball,
+            batsman,
+            non_striker,
+            bowler,
+            is_super_over,
+            wide_runs,
+            bye_runs,
+            legbye_runs,
+            noball_runs,
+            penalty_runs,
+            batsman_runs,
+            extra_runs,
+            total_runs,
+            player_dismissed,
+            dismissal_kind,
+            dfielder
+
+            </pre>
+    </div>
+
+    
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script src="./app.js"></script>
+
+</body>
